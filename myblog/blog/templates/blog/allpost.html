@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+My blog
+{% endblock %}
+{% block cssfiles %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock  %}
+{% block content %}
+<h2>My All time blogs</h2>
+<ul>
+    {% include "blog/includes/post.html" %}
+    {% include "blog/includes/post.html" %}
+    {% include "blog/includes/post.html" %}
+    {% include "blog/includes/post.html" %}
+    {% include "blog/includes/post.html" %}
+</ul>
+{% endblock %}

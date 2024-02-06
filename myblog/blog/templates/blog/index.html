@@ -8,33 +8,23 @@ My blog
 <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock  %}
 {% block content %}
-<header id="main-navigation">
-<h1><a href="">Max's Blog</a></h1>
-<nav><a href="">Allposts</a></nav>
-</header>
+
 <section id="welcome">
     <header>
-        <img src="" alt="Author ki pic"/>
+        <img src="{% static 'blog/images/max.png' %}" alt="Author ki pic"/>
         <h2>Author's Blog</h2>
     </header>
     <p>Hi this is ABC and i love to blog about chess traps</p>
 </section>
-<section id="latest posts">
+<section id="latest-posts">
     <h2>
         My Latest Thoughts
     </h2>
     <ul>
-        <li>
-            <article class="post">
-                <a href="">
-                    <img src="" alt="Mountain Hiking">
-                    <div class="post__content">
-                        <h3>Mountain Hiking</h3>
-                        <p>There's Nothing linke the views you get when hiking in the mountains!  </p>
-                    </div>
-                </a>
-            </article>
-        </li>
+        {% include "blog/includes/post.html" %}
+        {% include "blog/includes/post.html" %}
+        {% include "blog/includes/post.html" %}
+        {% include "blog/includes/post.html" %}
     </ul>
 
 </section>

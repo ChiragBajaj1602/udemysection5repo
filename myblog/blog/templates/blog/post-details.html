@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+{{postname}}'s Blog
+{% endblock title %}
+{% block cssfiles %}
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
+{% endblock cssfiles %}
+{% block content %}
+<section id ="summary">
+    <h2>Post title</h2>
+    <article>
+        <img src="" alt="Post title"/>
+        <address>By ME</address>
+        <div>
+            Last updated on <time>July 10th </time>
+        </div>
+    </article>
+
+</section>
+<main>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto esse labore qui earum eveniet laborum sequi nulla inventore, facere, eos repellat explicabo, culpa a vero animi quisquam! Cupiditate, corrupti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, totam!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eum blanditiis ratione quas adipisci sit cumque doloremque corporis fugiat voluptates consequuntur. Earum iste debitis libero inventore sit dolorem dolor maiores.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda rerum error asperiores provident doloribus aliquam repellat voluptates reiciendis hic. Consequuntur inventore, id perspiciatis corrupti deleniti et voluptates. Est, nesciunt!</p>
+</main>
+{% endblock content %}

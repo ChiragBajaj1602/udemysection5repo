@@ -4,6 +4,8 @@ from django.shortcuts import render
 def startingpage(request):
     return render(request,"blog/index.html")
 def postspage(request):
-    pass
+    return render(request,"blog/allpost.html")
 def postdetailspage(request,slug):
-    pass
+    return render(request,"blog/post-details.html",{
+        "postname":slug
+    })
